@@ -1,3 +1,15 @@
+:root {
+  --violet: 263 55% 52%;
+  --gray-blue: 217 19% 35%;
+  --black-blue: 219 29% 14%;
+  --White: 0 0% 100%;
+
+  --neutral-gray: 0, 0%, 81%;
+  --neutral-gray-blue: 210, 46%, 95%;
+
+  --ff-primary: "Barlow Semi Condensed", sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,11 +18,52 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  font-size: 13px;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+.container {
+  background-color: pink;
+}
+
+/* utilities */
+.flex {
+  display: flex;
+}
+
+.bg-color-violet {
+  background: hsl(var(--violet));
+}
+
+.bg-color-gray-blue {
+  background: hsl(var(--gray-blue));
+}
+
+.bg-color-black-blue {
+  background: hsl(var(--black-blue));
+}
+
+.text-white {
+  color: hsl(var(--White));
+}
+
+.text-gray-blue {
+  color: hsl(var(--gray-blue));
+}
+
+/* components */
+
+.testimonial-grid {
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
+}
+
+.testimonial {
+  font-size: 60px;
 }
 
 .attribution {
